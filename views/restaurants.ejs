@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/styles.css" rel="stylesheet" />
+    <title>Restaurants | The Good Food</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">THE GOOD FOOD</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/home">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/restaurants">Restuarants</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero-heading"><span class="heading-inverted"></span></h1>
+    </header>
+
+ 
+ 
+
+        <!-- component -->
+<div
+    class="container mb-4 flex mx-auto w-full items-center justify-center">
+    <ul class="flex flex-col p-4"> <% for(var i=0;i<rest.length;i++){ %>
+    <li class="border-gray-400 flex flex-row">
+        <div
+            class="select-none flex flex-1 items-center p-4 transition duration-500 ease-in-out transform hover:-translate-y-2 px-40 rounded-2xl border-2 p-8 hover:shadow-2xl border-red-400"
+        >
+            <div class="flex-1 pl-4 mr-32">
+                <div class="font-medium ">
+                   <b>Restaurant Name :</b> <%=rest[i].RestaurantName%>
+                   <br>
+                   <b>Contact Name :</b> <%=rest[i].ContactName%> 
+                   <br>
+                   <b>Location :</b> <%=rest[i].Location%> 
+                   <br>
+                   <b>Pincode :</b> <%=rest[i].Pincode%>  
+                   <br>
+                   <b>Website :</b> <%=rest[i].Website%>        
+                   <br>      
+                   <b>Phone :</b> <%=rest[i].Phone%>               
+                   <br>
+                   <b>Avg Daily Transaction :</b> <%=rest[i].Avg%> 
+                   <br>
+                </div>
+            </div>
+            <div 
+                class="w-1/4 text-wrap text-center flex text-white text-bold flex-col rounded-md bg-red-500 justify-center items-center mr-10 p-2">
+              <a href="<%=rest[i].Website%>">Visit</a>
+            </div>
+        </div>
+    </li>
+    <% }%>
+</ul>
+</div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-header">Good Food makes a Good Mood</div>
+    </footer>
+    
+</body>
+</html>
