@@ -83,6 +83,7 @@ hr {
 
 .navigation .nav-brand {
     font-weight: bold;
+    font-size: x-large;
 }
 
 .navigation .nav-pills {
@@ -107,8 +108,8 @@ hr {
 
 .hero .vsh {
     
-    max-width: 80%;
-    width: 800px;
+    max-width: 100%;
+    width: 2500px;
     display: block;
     margin: auto;
 }
