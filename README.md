@@ -5,5 +5,5 @@ HTML ( ejs ) is used for Frontend.
 CSS used for styling.
 node.js and mongoDB used for Backend. 
 robo 3T used to store the datas from the form.
-All the data and be erased and managed from the robo 3T server. 
-This repository holds all the codes used in the frontend and backend.
+All the data are be erased and managed from the robo 3T server. 
+
